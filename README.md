@@ -1,75 +1,89 @@
-# AI-resume-analyzer
+#  AI Resume Analyzer  
 
- AI Resume Analyzer
+A personal AI project that analyzes resumes using Natural Language Processing (NLP) and Machine Learning.  
+It evaluates resumes based on job descriptions, skills, and experience, then provides detailed feedback and scores to help job seekers improve their chances.
 
-Smarter Hiring. Stronger Resumes.
+---
 
-Overview
+##  Project Overview
+The **AI Resume Analyzer** reads a candidate’s resume (PDF or text), extracts key information such as skills, education, and work experience, and compares it with a target job description.  
+It then generates:
+- A **compatibility score** between the resume and the job description  
+- **Skill match percentage**  
+- **Recommendations** for missing or weak skills  
+- **ATS-friendly insights**  
 
-The AI Resume Analyzer is an intelligent application that evaluates resumes the way a recruiter or ATS (Applicant Tracking System) would — using Natural Language Processing (NLP) and Machine Learning.
+---
 
-It identifies skills, experience, and education, compares them against a job description, and gives personalized improvement suggestions to help job seekers optimize their resumes and boost interview chances.
+##  Features
+-  **Resume Parsing:** Extracts skills, experience, and education  
+-  **Job Match Scoring:** Compares resume content with job requirements  
+-  **Keyword Extraction:** Identifies high-impact words used in job posts  
+-  **AI Feedback:** Suggests improvements using NLP models  
+-  **Visualization:** Displays skill match and score summaries  
 
- Key Features
+---
 
-. Resume Parsing — Extracts key details from PDF/DOCX resumes
-. Skill Extraction — Detects technical and soft skills using NLP models
-. Job Description Matching — Calculates similarity between candidate profile and job role
-. AI Feedback — Highlights missing keywords and weak areas
-. Scoring System — Generates a match percentage for quick evaluation
+##  Tech Stack
+| Component | Tools Used |
+|------------|-------------|
+| **Programming** | Python, Google Colab |
+| **Libraries** | pandas, scikit-learn, nltk, spacy, transformers |
+| **Modeling** | BERT / DistilBERT for text embeddings |
+| **Deployment (optional)** | Streamlit / Hugging Face Spaces (future) |
 
- Tech Stack
-Category	Tools
-Language	Python 3.10
-Libraries	Pandas, NumPy, Scikit-learn, NLTK
-AI/NLP	Hugging Face Transformers
-Interface	Streamlit / Flask
-Deployment (Optional)	Render / Localhost
-Setup & Installation
+---
 
-1.Clone the repository
+## Folder Structure
+AI-Resume-Analyzer/
+│
+├── resume_analyzer.ipynb # Main Colab notebook
+├── sample_data/ # Example resumes & job descriptions
+├── model/ # Trained or saved models (optional)
+├── requirements.txt # Dependencies
+└── README.md # Project documentation
 
-git clone https://github.com/<your-username>/AI-Resume-Analyzer.git
-cd AI-Resume-Analyzer
+---
 
+##  How to Run in Google Colab
+1. Open the notebook in Google Colab  
+    [Run it in Colab](https://colab.research.google.com/)  
+2. Upload a sample resume (`.pdf` or `.txt`)  
+3. Paste the job description text  
+4. Click **Run All** to generate scores and feedback  
 
-2. Install dependencies
+---
 
-pip install -r requirements.txt
+##  Future Improvements
+- Add web interface with **Streamlit**  
+- Create automated PDF reports  
+- Expand dataset with more diverse resumes  
+- Add multilingual support  
 
+---
 
-3.Run the app
+##  Example Output
+| Feature | Example |
+|----------|----------|
+| **Resume Score** | 82 / 100 |
+| **Skill Match** | 74% |
+| **Missing Skills** | SQL, AWS |
+| **AI Suggestion** | “Consider adding measurable outcomes in your experience section.” |
 
-python app.py
+---
 
+## Contributing
+Pull requests and feedback are welcome!  
+If you’d like to collaborate or extend this project, feel free to fork and build upon it.
 
-4. Open your browser and go to:
+---
 
-http://localhost:5000
+##  Author
+**Adyasha Jena**  
+📧 ajena0657@gmail.com 
+🔗 [LinkedIn](www.linkedin.com/in/adyasha-jena-90953a309) | [GitHub](https://github.com/AdyashaJena11)
 
+---
 
-Upload your resume and job description — and let the AI handle the rest 🎯
+ *If you like this project, don’t forget to star the repo!*  
 
-Project Structure
-
- Future Improvements
-
-Interactive web dashboard with resume scoring visualization
-
-Integration with LinkedIn or job portals
-
-AI-powered resume rewriting suggestions
-
-Support for multilingual resumes
-
- About the Developer
-
-Hi, I’m Adyasha Jena 
-A passionate AI & Data enthusiast focused on using machine learning to solve real-world problems.
-This project is part of my journey to combine career technology with AI innovation, bridging the gap between recruiters and job seekers.
-
- LinkedIn:www.linkedin.com/in/adyasha-jena-90953a309
-
-📧 Email:ajena0657@gmail.com
-
- If you find this project helpful, don’t forget to star the repo!
