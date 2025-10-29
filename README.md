@@ -50,7 +50,9 @@ AI-Resume-Analyzer/
     [Run it in Colab](https://colab.research.google.com/)  
 2. Upload a sample resume (`.pdf` or `.txt`)  
 3. Paste the job description text  
-4. Click **Run All** to generate scores and feedback  
+4. Click **Run All** to generate scores and feedback
+5. bug=True in launch()
+* Running on public URL: https://452ec280a001cdf654.gradio.live
 
 ---
 
